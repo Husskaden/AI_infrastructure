@@ -1,0 +1,31 @@
+# Template to call Ollama's "generate" endpoint
+# Remember to start api first with "ollama serve"
+# Stop the api with "sudo systemctl stop ollama.service"
+
+curl -X POST http://localhost:11434/api/generate -d '{
+    "model": "llama3.2",
+    "prompt": "Compose a poeno n LLMs",
+    "stream": false,
+    "format": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string"
+            },
+            "theme": {
+                "type": "string"
+            },
+            "lines": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        },
+        "required": [
+            "title",
+            "theme",
+            "lines"
+        ]
+    }
+}' | jq .
