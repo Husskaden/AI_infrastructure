@@ -1,0 +1,19 @@
+# Chat endpoint curl command
+# Use when you want to provide the previous chat
+
+curl http://localhost:11434/api/chat -d '{
+    "model": "llama3.2","messages": [
+        {
+            "role": "user",
+            "content": "Compose a short poem about LLMs."
+        },
+        {"role": "assistant",
+        "content": "In circuits vast, they find their spar, \nLanguage learned in the digital dar. \nTransforming text with neural art, \nLLMs ignite a brand-new start."
+        },
+        {
+            "role": "user",
+            "content": "Add alliteration tot the poem for more impact."
+        }
+    ],
+    "stream": false
+}' | jq .
