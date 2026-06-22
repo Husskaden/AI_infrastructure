@@ -1,0 +1,18 @@
+# Copying, deleting or pulling a new model via apis
+
+"Copying a model
+curl http://localhost:11434/api/copy -d '{
+    "source": "llama3.2",
+    "destination": "llama3-copy"
+}'
+
+# deleting a model
+curl -X DELETE http://localhost:11434/api/delete -d '{
+    "model": "llama3-copy"
+
+}'
+
+# pulling a new model from the ollama library
+curl http://localhost:11434/api/pull -d '{
+    "model": "llama3.2"
+}'
