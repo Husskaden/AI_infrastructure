@@ -188,10 +188,15 @@ python test_rag_pipeline.py
 
 
 
-Step 1: Start the server
+Step 1: Start the server (on port5252)
+````
+
 
 cd /root/rag-assistant
 python app.py
+````
+(Wait 2 minutes for vector database initialization before testing)
+
 
 
 
