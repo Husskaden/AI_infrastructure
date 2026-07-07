@@ -133,4 +133,19 @@ print(" Ready for vectorization!")
 
 ````
 
+# Step 5: Understand how Embeddings work
+Purpose: Learn how AI converts text to math BEFORE processing real docs in task 6
+
+**Semantic Embedding Transformation:**
+"Dogs allowed Fridays" → AI Model → 384D Vector (each word becomes 384 numbers)
+[0.23, -0.45, 0.67, ..., 0.12]
+Semantic Similarity:
+"Pets permitted" ↔ "Dogs allowed" = 92%
+"Remote work" ↔ "Dogs allowed" = 18%
+
+Run test_embeddings.py (see file):
+````
+python test_embeddings.py
+
+````
 
