@@ -184,3 +184,17 @@ python test_rag_pipeline.py
 
 ````
 
+## Task 9: Launch Your AI Assistant
+
+
+
+Step 1: Start the server
+
+cd /root/rag-assistant
+python app.py
+
+
+
+
+
+
