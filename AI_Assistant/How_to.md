@@ -17,7 +17,7 @@ echo "READY" > /root/rag-setup-complete.txt
 
 ````
 
-## Task 2: Explroe Document vault
+## Task 2: Explore Document vault
 
 ````
 cd /root/techcorp-docs
@@ -133,7 +133,7 @@ print(" Ready for vectorization!")
 
 ````
 
-# Step 5: Understand how Embeddings work
+## Task 5: Test to understand how Embeddings work (skip in real world)
 Purpose: Learn how AI converts text to math BEFORE processing real docs in task 6
 
 **Semantic Embedding Transformation:**
@@ -148,4 +148,23 @@ Run test_embeddings.py (see file):
 python test_embeddings.py
 
 ````
+
+## Task 6: Chunking and embedding docs into database (no test)
+
+Documents -> Chunking -> Embdding -> ChromaDB
+
+Create ingest_documents.py (see the file).
+
+Execute ingestion:
+````
+python ingest_documents.py
+
+````
+
+## Task 7: Activate Semantic Search
+
+Purpose: Build semantic search that understands MEANING, not just keywords
+
+Build test search engine:
+
 
