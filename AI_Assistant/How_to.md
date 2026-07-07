@@ -165,6 +165,22 @@ python ingest_documents.py
 
 Purpose: Build semantic search that understands MEANING, not just keywords
 
-Build test search engine:
+Build test search engine (see file test_search.py):
 
+````
+
+
+python test_search.py
+````
+
+
+## Task 8: 
+
+Test your pipeline (see file test_rag_pipeline.py):
+
+````
+
+python test_rag_pipeline.py
+
+````
 
